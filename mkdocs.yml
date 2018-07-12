@@ -1,0 +1,7 @@
+site_name: Maana
+pages:
+    - Home: index.md
+    - User Guide: user.md
+    - Developer: developer.md
+    - Administrator: administrator.md
+# theme: readthedocs

@@ -1,0 +1,164 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Maana Knowledge Platform\n\n\nGuides\n\n\n\n\nUser\n\n\nDeveloper\n\n\nAdministrator",
+            "title": "Home"
+        },
+        {
+            "location": "/#maana-knowledge-platform",
+            "text": "",
+            "title": "Maana Knowledge Platform"
+        },
+        {
+            "location": "/#guides",
+            "text": "User  Developer  Administrator",
+            "title": "Guides"
+        },
+        {
+            "location": "/user/",
+            "text": "",
+            "title": "User Guide"
+        },
+        {
+            "location": "/developer/",
+            "text": "",
+            "title": "Developer"
+        },
+        {
+            "location": "/administrator/",
+            "text": "Administrator Guide\n\n\nDeployment Prerequisites\n\n\nGeneral Prerequisites\n\n\nPrerequisites specific to cloud deployments\n\n\nPreparation of Azure infrastructure\n\n\nPrerequisites specific to on-prem deployments\n\n\nInstalling Maana platform3\n\n\nVM configuration3\n\n\nDocker Plugins installation3\n\n\nDocker Login\n\n\nDocker Deploy\n\n\nAdding users to the MAANA platform\n\n\nConnecting to an authentication provider\n\n\nCreating tenant groups\n\n\nAssigning users to a tenant group\n\n\nCreating and managing namespaces\n\n\nSystem monitoring and maintenance\n\n\nMonitoring, logging, reporting and alerts\n\n\nResizing cluster nodes\n\n\nAdding cluster nodes\n\n\nTenant resource allocation\n\n\nApplying system updates\n\n\nBackup & restore\n\n\nDisaster recovery\n\n\nManaging Maana services catalog\n\n\nTroubleshooting\n\n\n\u200b## Technical support",
+            "title": "Administrator"
+        },
+        {
+            "location": "/administrator/#administrator-guide",
+            "text": "",
+            "title": "Administrator Guide"
+        },
+        {
+            "location": "/administrator/#deployment-prerequisites",
+            "text": "",
+            "title": "Deployment Prerequisites"
+        },
+        {
+            "location": "/administrator/#general-prerequisites",
+            "text": "",
+            "title": "General Prerequisites"
+        },
+        {
+            "location": "/administrator/#prerequisites-specific-to-cloud-deployments",
+            "text": "",
+            "title": "Prerequisites specific to cloud deployments"
+        },
+        {
+            "location": "/administrator/#preparation-of-azure-infrastructure",
+            "text": "",
+            "title": "Preparation of Azure infrastructure"
+        },
+        {
+            "location": "/administrator/#prerequisites-specific-to-on-prem-deployments",
+            "text": "",
+            "title": "Prerequisites specific to on-prem deployments"
+        },
+        {
+            "location": "/administrator/#installing-maana-platform3",
+            "text": "",
+            "title": "Installing Maana platform3"
+        },
+        {
+            "location": "/administrator/#vm-configuration3",
+            "text": "",
+            "title": "VM configuration3"
+        },
+        {
+            "location": "/administrator/#docker-plugins-installation3",
+            "text": "",
+            "title": "Docker Plugins installation3"
+        },
+        {
+            "location": "/administrator/#docker-login",
+            "text": "",
+            "title": "Docker Login"
+        },
+        {
+            "location": "/administrator/#docker-deploy",
+            "text": "",
+            "title": "Docker Deploy"
+        },
+        {
+            "location": "/administrator/#adding-users-to-the-maana-platform",
+            "text": "",
+            "title": "Adding users to the MAANA platform"
+        },
+        {
+            "location": "/administrator/#connecting-to-an-authentication-provider",
+            "text": "",
+            "title": "Connecting to an authentication provider"
+        },
+        {
+            "location": "/administrator/#creating-tenant-groups",
+            "text": "",
+            "title": "Creating tenant groups"
+        },
+        {
+            "location": "/administrator/#assigning-users-to-a-tenant-group",
+            "text": "",
+            "title": "Assigning users to a tenant group"
+        },
+        {
+            "location": "/administrator/#creating-and-managing-namespaces",
+            "text": "",
+            "title": "Creating and managing namespaces"
+        },
+        {
+            "location": "/administrator/#system-monitoring-and-maintenance",
+            "text": "",
+            "title": "System monitoring and maintenance"
+        },
+        {
+            "location": "/administrator/#monitoring-logging-reporting-and-alerts",
+            "text": "",
+            "title": "Monitoring, logging, reporting and alerts"
+        },
+        {
+            "location": "/administrator/#resizing-cluster-nodes",
+            "text": "",
+            "title": "Resizing cluster nodes"
+        },
+        {
+            "location": "/administrator/#adding-cluster-nodes",
+            "text": "",
+            "title": "Adding cluster nodes"
+        },
+        {
+            "location": "/administrator/#tenant-resource-allocation",
+            "text": "",
+            "title": "Tenant resource allocation"
+        },
+        {
+            "location": "/administrator/#applying-system-updates",
+            "text": "",
+            "title": "Applying system updates"
+        },
+        {
+            "location": "/administrator/#backup-restore",
+            "text": "",
+            "title": "Backup &amp; restore"
+        },
+        {
+            "location": "/administrator/#disaster-recovery",
+            "text": "",
+            "title": "Disaster recovery"
+        },
+        {
+            "location": "/administrator/#managing-maana-services-catalog",
+            "text": "",
+            "title": "Managing Maana services catalog"
+        },
+        {
+            "location": "/administrator/#troubleshooting",
+            "text": "\u200b## Technical support",
+            "title": "Troubleshooting"
+        }
+    ]
+}
