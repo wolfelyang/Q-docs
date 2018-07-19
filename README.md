@@ -2,7 +2,7 @@
 Maana product documentation
 
 ## Build
-Install mkDocs using [NPM]():
+Install mkDocs using [NPM](https://nodejs.org/en/):
 ```bash
 npm i -g mkdocs
 ```
