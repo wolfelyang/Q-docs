@@ -2,9 +2,9 @@
 Maana product documentation
 
 ## Build
-Install mkDocs using [NPM](https://nodejs.org/en/):
+Install mkDocs using [PIP](https://packaging.python.org/tutorials/installing-packages/):
 ```bash
-npm i -g mkdocs
+pip install mkdocs
 ```
 
 To produce a static site, within the root direcotry, simply:
