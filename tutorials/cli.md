@@ -25,7 +25,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 ```
 
-![](/assets/animations/cli-gif1.gif )
+![](/assets/animations/cli-gif1.gif)
 
 
 ## Installation
@@ -36,9 +36,9 @@ We use the GraphQL command line interface (CLI) with the Maana plugin:
   npm i -g graphql-cli graphql-cli-maana
 ```
 
-![](/assets/animations/cli-gif2.gif )
+![](/assets/animations/cli-gif2.gif)
 
-![](/assets/animations/cli-gif3.gif )
+![](/assets/animations/cli-gif3.gif)
 
 ## Setup
 
@@ -73,7 +73,7 @@ About to write to /home/me/maana/training/.graphqlconfig:
 
 ? Is this ok? Yes
 ```
-![](/assets/animations/cli-gif4.gif )
+![](/assets/animations/cli-gif4.gif)
 
 ## Authentication with Maana
 
@@ -87,7 +87,7 @@ Maana endpoints require a valid (authenticated) user in order to prevent unautho
 * Login Again (For Enhanced Security)
 * Copy the generated auth token that shows up below the button
 
-![](/assets/animations/cli-gif5.gif )
+![](/assets/animations/cli-gif5.gif)
 
 
 * In the terminal add an environment variable for the auth token
@@ -108,7 +108,7 @@ $Env:AUTH_TOKEN_ENV = "<paste auth token here>"
 ```
 
 
-![](/assets/animations/cli-gif7.gif )
+![](/assets/animations/cli-gif7.gif)
 
 
 
@@ -126,7 +126,7 @@ After creating a new `.graphqlconfig` file connecting to a Maana API endpoint:
   $ gql msignin
 ```
 
-![](/assets/animations/cli-gif8.gif )
+![](/assets/animations/cli-gif8.gif)
 
 * Run `gql menv --shell <your shell>` in the current terminal window to run authenticated GraphQL calls.
   - Example: Run `gql menv --shell bash` if you are using bash
@@ -148,7 +148,7 @@ After creating a new `.graphqlconfig` file connecting to a Maana API endpoint:
   ```sh
     gql ping
   ```
-![](/assets/animations/cli-gif9.gif )
+![](/assets/animations/cli-gif9.gif)
 
 #### Additional Notes
 
@@ -186,7 +186,7 @@ Sending query:
 ✔ Call succeeded:
 {"addServiceSource":"50d759d5-983d-4ea2-9773-20077c9b823e"}
 ```
-![](/assets/animations/cli-gif10.gif )
+![](/assets/animations/cli-gif10.gif)
 
 ## Update the Config
 
@@ -229,7 +229,7 @@ Again, we need to add the authorization header.
   ```bash
     $ gql maddheaders
   ```
-  ![](/assets/animations/cli-gif11.gif )
+  ![](/assets/animations/cli-gif11.gif)
 * In Maana Q 3.5.0 will require adding it manually, check [here](#v3.0.5) for instructions.
 
 ## Introspecting the Service
@@ -240,7 +240,7 @@ Only a few types were specified for the **domain model**. Maana adds a set of bo
 gql get-schema -p dp
 ```
 
-  ![](/assets/animations/cli-gif13.gif )
+  ![](/assets/animations/cli-gif13.gif)
 
 ## Loading Instance Data
 
@@ -253,9 +253,9 @@ gql mload data/DrillingReport.csv -p dp
 gql mload data/Well.csv -p dp
 ```
 
-![](/assets/animations/cli-gif14.gif )
+![](/assets/animations/cli-gif14.gif)
 
 
 For convenience, these steps have been added to a script file: `loadData.sh`
 
-![](/assets/animations/cli-gif15.gif )
+![](/assets/animations/cli-gif15.gif)
