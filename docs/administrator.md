@@ -10,11 +10,11 @@
 
 ### Prerequisites specific to on-prem deployments
 
-## Installing Maana platform3 
+## Installing Maana platform3
 
-### VM configuration3 
+### VM configuration3
 
-### Docker Plugins installation3 
+### Docker Plugins installation3
 
 ### Docker Login
 
@@ -50,4 +50,5 @@
 
 ## Troubleshooting
 
-​## Technical support
+​\#\# Technical support
+
