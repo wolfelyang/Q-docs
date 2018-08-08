@@ -2,9 +2,9 @@
 
 ## Prerequisites
 
-### 
+###
 
-### 
+###
 
 ## Adding users to the MAANA platform
 
@@ -37,4 +37,3 @@
 ## Troubleshooting
 
 ​\#\# Technical support
-
