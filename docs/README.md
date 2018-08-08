@@ -1,12 +1,17 @@
 ---
 description: >-
-  Useful guides for various roles: analysts, engineers, scientists, and
+  Useful guides for various roles: analysts, developers, scientists, and
   administrators.
 ---
 
 # Guides to Q
 
-Maana product documentation
+Maana product documentation organized by role:
+
+- [Analyst Guide](docs/analyst/index.md)
+- [Developer](docs/developer/index.md)
+- [Scientist](docs/scientist/index.md)
+- [Adinistrator](docs/administrator/index.md)
 
 ## Build
 
@@ -37,4 +42,3 @@ To update GitHub's live view:
 ```bash
 mkdocs gh-deploy
 ```
-

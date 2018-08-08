@@ -1,9 +1,7 @@
 # Table of contents
 
-* [Guides to Q](README.md)
-* [Analyst Guide](docs/README.md)
-  * [User Guide](docs/user.md)
-  * [Maana Knowledge Platform](docs/index.md)
-  * [Administrator Guide](docs/administrator.md)
-  * [developer](docs/developer.md)
-
+- [Guides to Q](docs/README.md)
+- [Analyst Guide](docs/analyst/index.md)
+- [Developer](docs/developer/index.md)
+- [Scientist](docs/scientist/index.md)
+- [Adinistrator](docs/administrator/index.md)
