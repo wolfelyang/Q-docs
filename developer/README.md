@@ -56,19 +56,19 @@ For more information on using on Graph QL, please refer to How to GraphQL at:  [
 
 ## Computational Knowledge Graph Features
 
-With the Computational Knowledge Graph: 
+With the Computational Knowledge Graph:
 
-•   The Graph is dynamic. Nodes, which represent concepts in the graph, are not static containers, but rather act as computational vessels, allowing algorithms to be stored and executed. 
+•   The Graph is dynamic. Nodes, which represent concepts in the graph, are not static containers, but rather act as computational vessels, allowing algorithms to be stored and executed.
 
 •   Models - Knowledge Graph flexibility enables groups across the organization to leverage and build-upon models created by other groups, dramatically accelerating the speed at which models are created throughout the organization. These models are dynamic, and once operationalized into applications, they learn and adapt based on the user behaviors and provide continuous intelligence for day-to-day operations.
 
 * The structure of data is separated from its content. This separation enables a fluidity of modeling - data from any source or format can be seamlessly integrated, modeled, searched, analyzed, operationalized and re-purposed.
 * Data remains at the source - Only the most relevant data, within the context of what is being optimized, is indexed and brought into the graph.
-* Each resulting Data Model is a unique combination of three key components, which are instrumental in optimizing assets and decision flows: 
+* Each resulting Data Model is a unique combination of three key components, which are instrumental in optimizing assets and decision flows:
 
-{% hint style="info" %}
+
 **Note**:  These algorithms might range from being as simple as pulling in new external source data, to as complicated as classification of documents through machine learning.
-{% endhint %}
+
 
 * As source data is updated in real time, so are the nodes and the computational models that act on that data, permitting more complex relationships to be modeled, and enhancing the graph’s ability to understand the connections between concepts \(rather than simple strings of data\), and encouraging optimization of decisions and operations.
 
@@ -90,7 +90,7 @@ Knowledge microservices are a class of GraphQL services that are developed for t
 
 As a consequence, these peer microservices provide reasoning capabilities to Knowledge Applications, which help solve domain-specific problems and support optimal decision-making that is capable of learning over time. Taken together, these services allow the solution developer to focus on designing GraphQL schemas and implementing computational resolvers only where needed.
 
-The Maana platform manages these services, providing authentication, reliable messaging, \(automatic\) graph persistence \(with search and querying\), scaling, monitoring, and a rich UX. These GraphQL services include: 
+The Maana platform manages these services, providing authentication, reliable messaging, \(automatic\) graph persistence \(with search and querying\), scaling, monitoring, and a rich UX. These GraphQL services include:
 
 * authenticated access
 * client/server boilerplate
@@ -98,7 +98,7 @@ The Maana platform manages these services, providing authentication, reliable me
 * Lifecycle management \(info, register, deregister\)
 * Docker containerization and automatic scaling/load balancing
 
-Maana Knowledge Services form a network of GraphQL endpoints, exposing their types, queries, and mutations for direct access, as well as publishing and subscribing to network events. A GraphQL service \(or endpoint\) consists of: 
+Maana Knowledge Services form a network of GraphQL endpoints, exposing their types, queries, and mutations for direct access, as well as publishing and subscribing to network events. A GraphQL service \(or endpoint\) consists of:
 
 * types
 * queries
@@ -121,17 +121,16 @@ A **Bot** is a Knowledge Microservice that “listens” for specific events on 
 
 For more information on BotActions, see:  [https://confluence.corp.maana.io/display/RD/Bot+Actions](https://confluence.corp.maana.io/display/RD/Bot+Actions)
 
-{% hint style="info" %}
-**Example**: When a raw data file is loaded into MAANA, a bot automatically analyzes it to identify mentions of entities like persons, phone numbers, values, and facts.
-{% endhint %}
 
-Users can configure, start, stop, and schedule bot actions. This enables user interface components to immediately return the latest status: 
+**Example**: When a raw data file is loaded into MAANA, a bot automatically analyzes it to identify mentions of entities like persons, phone numbers, values, and facts.
+
+Users can configure, start, stop, and schedule bot actions. This enables user interface components to immediately return the latest status:
 
 * Throughout the duration of extended, ongoing operations.
-* By events that act as automatic triggers \(such as entity recognition, new concept creation and classification\). 
+* By events that act as automatic triggers \(such as entity recognition, new concept creation and classification\).
 * Report any errors or messages.
 
-There are two primary scenarios to consider here: 
+There are two primary scenarios to consider here:
 
 1. Event Handling
 2. Direct Query/Mutations
@@ -140,9 +139,9 @@ There are two primary scenarios to consider here:
 
 When a Knowledge Service subscribes to and handles an event, such as "fileAdded," it can \(optionally\) create an instance of a BotAction Kind by mutating the Computational Knowledge Graph.
 
-{% hint style="info" %}
+
 **Note**:  As the service performs its operation, it can periodically update the progress \(if it is deterministic\) and update the status and report errors.
-{% endhint %}
+
 
 #### Queries and Mutations
 
@@ -156,7 +155,7 @@ Services also depend on existing Kinds and queries, mutations, and events. The s
 
 ## Development
 
-The development of a Maana Knowledge Application solution can be best described in five stages: 
+The development of a Maana Knowledge Application solution can be best described in five stages:
 
 1. Design
 2. Local Service \(Standalone\)
@@ -166,15 +165,15 @@ The development of a Maana Knowledge Application solution can be best described 
 
 ### Design Stage
 
-The primary focus of this stage is: 
+The primary focus of this stage is:
 
 * GraphQL types \(Kinds, Properties, Relations\)
 * Queries and Mutations \(often based on Problem Questions\)
 * Events \(consumed and produced\)
 
-At the Design Stage, the overall problem to be solved has been analyzed and a domain model and set of decomposed problem questions has been generated. Some discussion of entity sources and data science has taken place, and it is now time to code one or more Knowledge Microservices to provide some new concepts \(Types, Kinds\) along with Queries, Mutations, and Events that involve them. 
+At the Design Stage, the overall problem to be solved has been analyzed and a domain model and set of decomposed problem questions has been generated. Some discussion of entity sources and data science has taken place, and it is now time to code one or more Knowledge Microservices to provide some new concepts \(Types, Kinds\) along with Queries, Mutations, and Events that involve them.
 
-#### Focus on the GraphQL 
+#### Focus on the GraphQL
 
 For the Knowledge Service/Bot, this is the entire description of and interface to their world. Define a file in the GraphQL SDL, such as `model.gql`, and include custom queries, mutations, and publications/subscriptions.
 
