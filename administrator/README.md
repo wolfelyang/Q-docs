@@ -1,24 +1,10 @@
 # Administrator
 
-## Deployment Prerequisites
+## Prerequisites
 
-### General Prerequisites
+### 
 
-### Prerequisites specific to cloud deployments
-
-#### Preparation of Azure infrastructure
-
-### Prerequisites specific to on-prem deployments
-
-## Installing Maana platform3
-
-### VM configuration3
-
-### Docker Plugins installation3
-
-### Docker Login
-
-### Docker Deploy
+### 
 
 ## Adding users to the MAANA platform
 
