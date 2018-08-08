@@ -30,7 +30,7 @@ The MAANA knowledge platform offers a new way to get more out of machine learnin
 
 ## 2 Log in/out to Maana
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-02-16 at 3.14.17 PM.png](.gitbook/assets/image001.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-02-16 at 3.14.17 PM.png](../.gitbook/assets/image001.png)
 
 Go to the web address provided by IT admin.
 
@@ -48,7 +48,7 @@ Once logged in, the user can
 
 · Log out
 
-![](.gitbook/assets/image002.png)
+![](../.gitbook/assets/image002.png)
 
 To log out, go to the top right section of the Maana screen, click on the Profile icon and select the Log out option
 
@@ -56,7 +56,7 @@ To log out, go to the top right section of the Maana screen, click on the Profil
 
 The home screen of the MAANA portal has a few sections designed to help the user get faster to the activities that he/she is targeting.
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 2.04.47 PM.png](.gitbook/assets/image003.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 2.04.47 PM.png](../.gitbook/assets/image003.png)
 
 Example of the Home Screen / Dashboard
 
@@ -100,7 +100,7 @@ The Maana portal home page features a tab called “Workspaces”, where the use
 
 · “Workspace Templates” – can be used to create a new workspace from an existing template
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 2.03.13 PM.png](.gitbook/assets/image004.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 2.03.13 PM.png](../.gitbook/assets/image004.png)
 
 Example of workspace
 
@@ -108,7 +108,7 @@ Example of workspace
 
 Once a workspace is created it will automatically be saved and will appear under “My workspaces” in the “Workspaces” tab. The user can share the workspace only with other users within the same tenant.
 
-![](.gitbook/assets/image005.png)
+![](../.gitbook/assets/image005.png)
 
 To share a workspace \(proposal\):
 
@@ -168,7 +168,7 @@ To open an existing workspace:
 
 Note: The secondary ribbon menu in the under the WORKSPACES tab shows the workspaces that are currently open. Clicking on any of the names will take the user to the respective workspace.
 
-![/Users/mmarcu/Box Sync/H4 prod management/BA user guide HTML /MaanaH4UserGuideforBusinessAnalysts/Content/Resources/Images/WorkspacesSecondaryMenu\_970x487.png](.gitbook/assets/image006.png)
+![/Users/mmarcu/Box Sync/H4 prod management/BA user guide HTML /MaanaH4UserGuideforBusinessAnalysts/Content/Resources/Images/WorkspacesSecondaryMenu\_970x487.png](../.gitbook/assets/image006.png)
 
 To close an existing workspace:
 
@@ -178,7 +178,7 @@ To close an existing workspace:
 
 The workspace features several areas with specific functionality that enables the user to create, manage, visualize and explore Knowledge Graphs and their components
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 2.09.44 PM.png](.gitbook/assets/image007.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 2.09.44 PM.png](../.gitbook/assets/image007.png)
 
 #### 4.6.1 Explorer Panel
 
@@ -208,11 +208,11 @@ The Canvas enables the user to
 
 · Visualize and manually explore the Knowledge Graph
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.19.24 PM.png](.gitbook/assets/image008.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.19.24 PM.png](../.gitbook/assets/image008.png)
 
 Canvas example.
 
-#### 4.6.5 ![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.11.21 PM.png](.gitbook/assets/image009.png)The Context Panel
+#### 4.6.5 ![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.11.21 PM.png](../.gitbook/assets/image009.png)The Context Panel
 
 The Context Panel has a few tabs enables the user to
 
@@ -236,7 +236,7 @@ o Delete or remove Kinds from the Knowledge Graph
 
 #### 4.6.8
 
-#### 4.6.9 ![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.24.25 PM.png](.gitbook/assets/image010.png)The Inventory Panel
+#### 4.6.9 ![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.24.25 PM.png](../.gitbook/assets/image010.png)The Inventory Panel
 
 The Inventory Panel contains an inventory of micro services and files, kinds used in the workspace.
 
@@ -250,13 +250,13 @@ The Visualization Panel allows the user to visualize kinds and data associated w
 
 Raw Data kinds can be explored quickly using the visualization panel as each entity detected in the data file can be filtered using a “search as you type” capability
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.31.59 PM.png](.gitbook/assets/image011.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.31.59 PM.png](../.gitbook/assets/image011.png)
 
 Note Marius: what about interpreted kinds? Do we still have the same filtering capability ? at some point?
 
 The visualization panel can also be used to query a knowledge graph using GraphQL.
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.26.35 PM.png](.gitbook/assets/image012.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.26.35 PM.png](../.gitbook/assets/image012.png)
 
 ## 5 Platform capabilities
 
@@ -347,17 +347,17 @@ To load structured data into Maana:
 1. Create or select the workspace where you want to load data. Go to “Workspaces” Tab and either create a workspace or open a Shared Workspace/Template \( see 4.4 and/or 4.5 for more details if needed\).
 2. Click the “upload file” button then select the file\(s\) you would like to add. You can also drag and drop files into the Canvas area to upload them into the current workspace. The platform currently supports the CSV file format, with more file types to be supported in the near future.
 
-![](.gitbook/assets/image013.png)
+![](../.gitbook/assets/image013.png)
 
 The uploading file\(s\) will appear on the canvas while a “Progress” indicator in the explorer tab shows that the file is being processed.
 
-![](.gitbook/assets/image014.png)
+![](../.gitbook/assets/image014.png)
 
 Following the completion of the upload process, the system will generate:
 
 1. **Raw Data Kind\(s\)** – data kind representing files that were uploaded into Maana and their corresponding metadata.
 
-![](.gitbook/assets/image015.png)
+![](../.gitbook/assets/image015.png)
 
 Example of Raw Data Kind
 
@@ -369,17 +369,17 @@ Loading data into a Raw Data Kind triggers automatic parsing by Maana bots, resu
 
 · Entity extraction: analysis of comments, descriptions, or whole documents to identify mentions of entities, values, and facts
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-04-17 at 4.06.05 PM.png](.gitbook/assets/image016.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-04-17 at 4.06.05 PM.png](../.gitbook/assets/image016.png)
 
 The interpreted kinds have a schemas that includes entities that make up that kind and their suggested field types, which can be detected by Maanaa field classifier microservice as generic field types \( ie String, Integer, etc\) or as kind types
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.35.07 PM.png](.gitbook/assets/image017.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-27 at 3.35.07 PM.png](../.gitbook/assets/image017.png)
 
 Example: Interpreted Kind appears in blue, with sample instances showing in the visualization tab.
 
 1. Relations between kinds - Maana suggested relations and/or dependencies within the associative network. The Business Analyst can review and validate them as part of the kind visualization and curation process.
 
-![](.gitbook/assets/image018.png)
+![](../.gitbook/assets/image018.png)
 
 Maana also offers the option to load multiple files via CLI. See section “5.9 CLI capabilities” for instructions.
 
@@ -396,7 +396,7 @@ However, when unstructured data files are loaded, there are additional bots/micr
 
 The extracted entities will appear in the Inventory Tab, under the MAANA Entity Extractor service together with information how many instances of such entities were identified. The Business Analyst can drag one or all of the extracted entities to the canvas making them Kinds within the Knowledge Graph.
 
-![](.gitbook/assets/image019.png)
+![](../.gitbook/assets/image019.png)
 
 · Text classification: classification of comments, descriptions, or whole documents into preferred groups \(e.g. Comment problem types - Stuck pipe, Waiting on weather, etc. or document types - AFE report or Lease agreement\) – not available yet in UI.
 
@@ -412,7 +412,7 @@ Maana Kinds appear in 2 different shapes within the CKG canvas: Compact and Expa
 
 **Compact** **Representation** of an interpreted kind
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-21 at 4.01.17 PM.png](.gitbook/assets/image020.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-21 at 4.01.17 PM.png](../.gitbook/assets/image020.png)
 
 The Compact representation of a kind includes the following elements:
 
@@ -420,13 +420,13 @@ The Compact representation of a kind includes the following elements:
 
 · IN – relations connector at the kind level - shows incoming relations into the kind.
 
-![](.gitbook/assets/image021.png)
+![](../.gitbook/assets/image021.png)
 
 Example: IN-relation connector at the kind level.
 
 · OUT- relations connector at the kind level - shows outgoing relations / dependencies TO other kinds
 
-![](.gitbook/assets/image022.png)
+![](../.gitbook/assets/image022.png)
 
 Example: OUT-relation connector at the kind level.
 
@@ -434,7 +434,7 @@ Example: OUT-relation connector at the kind level.
 
 Expanded Representation–
 
-![/Users/mmarcu/Desktop/Screen Shot 2018-03-21 at 4.02.04 PM.png](.gitbook/assets/image023.png)
+![/Users/mmarcu/Desktop/Screen Shot 2018-03-21 at 4.02.04 PM.png](../.gitbook/assets/image023.png)
 
 The Expaded representation of a kind includes the following elements:
 
@@ -448,11 +448,11 @@ The Expaded representation of a kind includes the following elements:
 
 · IN – relations connector at the entity level - shows incoming relations into the kind or entities within those kinds.
 
-· ![](.gitbook/assets/image024.png)
+· ![](../.gitbook/assets/image024.png)
 
 · OUT- relations connector at the entity level - shows outgoing relations / dependencies TO other kinds or entities within those kinds
 
-![](.gitbook/assets/image025.png)
+![](../.gitbook/assets/image025.png)
 
 · Up-arrow – clicking on the up arrow changes the representation of the kind from Expanded mode to the Compact mode.
 
