@@ -10,4 +10,9 @@
   * [Cognitive Models](scientist/cognitive-models.md)
 * [Administrator](administrator/README.md)
   * [Deployment](administrator/deployment.md)
+* [Release Notes](release-notes.md)
+* [Tutorials](tutorials.md)
+* [FAQ](faq.md)
+* [Glossary](glossary.md)
+* [Contact](contact.md)
 
