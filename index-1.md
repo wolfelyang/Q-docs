@@ -1,4 +1,4 @@
-# developer
+# Developer
 
 Research and Development : Developer Guide
 
@@ -26,25 +26,25 @@ details the architecture of the platform, how to build a full solution and/or re
 
 /_&lt;!\[CDATA\[_/ div.rbtoc1532523907698 {padding: 0px;} div.rbtoc1532523907698 ul {list-style: disc;margin-left: 0px;} div.rbtoc1532523907698 li {margin-left: 0px;padding-left: 0px;} /_\]\]&gt;_/
 
-* [Table of Contents](developer.md#DeveloperGuide-TableofContents)
-* [Introduction](developer.md#DeveloperGuide-Introduction)
-* [GraphQL and Microservices](developer.md#DeveloperGuide-GraphQLandMicroservices)
-  * [GraphQL Learning Resources](developer.md#DeveloperGuide-GraphQLLearningResources)
-* [Knowledge Microservices and Bots](developer.md#DeveloperGuide-KnowledgeMicroservicesandBots)
-  * [Development Stages](developer.md#DeveloperGuide-DevelopmentStages)
-    * [Stage: Design](developer.md#DeveloperGuide-Stage:Design)
+* [Table of Contents](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-TableofContents)
+* [Introduction](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-Introduction)
+* [GraphQL and Microservices](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-GraphQLandMicroservices)
+  * [GraphQL Learning Resources](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-GraphQLLearningResources)
+* [Knowledge Microservices and Bots](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-KnowledgeMicroservicesandBots)
+  * [Development Stages](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-DevelopmentStages)
+    * [Stage: Design](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-Stage:Design)
     * \[Stage: Local Service \(Standalone\)\]\(\#DeveloperGuide-Stage:LocalService\(Standalone\)\)
     * \[Stage: Local Service \(Maana\)\]\(\#DeveloperGuide-Stage:LocalService\(Maana\)\)
-    * [Stage: Unmanaged Service](developer.md#DeveloperGuide-Stage:UnmanagedService)
-    * [Stage: Managed Service](developer.md#DeveloperGuide-Stage:ManagedService)
-  * [Debugging a Knowledge Microservice](developer.md#DeveloperGuide-DebuggingaKnowledgeMicroservice)
-  * [The BotAction Protocol](developer.md#DeveloperGuide-TheBotActionProtocol)
-* [Knowledge Applications](developer.md#DeveloperGuide-KnowledgeApplications)
-* [Development Environments](developer.md#DeveloperGuide-DevelopmentEnvironments)
-  * [Visual Studio Code](developer.md#DeveloperGuide-VisualStudioCode)
-    * [Command Line](developer.md#DeveloperGuide-CommandLine)
-    * [Recommended Plugins](developer.md#DeveloperGuide-RecommendedPlugins)
-    * [Settings](developer.md#DeveloperGuide-Settings)
+    * [Stage: Unmanaged Service](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-Stage:UnmanagedService)
+    * [Stage: Managed Service](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-Stage:ManagedService)
+  * [Debugging a Knowledge Microservice](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-DebuggingaKnowledgeMicroservice)
+  * [The BotAction Protocol](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-TheBotActionProtocol)
+* [Knowledge Applications](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-KnowledgeApplications)
+* [Development Environments](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-DevelopmentEnvironments)
+  * [Visual Studio Code](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-VisualStudioCode)
+    * [Command Line](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-CommandLine)
+    * [Recommended Plugins](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-RecommendedPlugins)
+    * [Settings](https://github.com/maana-io/Q-docs/tree/d98306762614483fac29f46193e55b48ffaaabdd/docs/developer/developer.md#DeveloperGuide-Settings)
 
 ## Introduction
 
@@ -386,7 +386,7 @@ Before creating a working computational knowledge graph and, it is useful to gai
 
 | **Term** | **What is it?** | **Example** |
 | :--- | :--- | :--- |
-| **Kinds**    | Kinds are concepts. | Examples: People, Ships, Oil Wells, Invoices |
+| **Kinds** | Kinds are concepts. | Examples: People, Ships, Oil Wells, Invoices |
 | **Fields** | Fields are properties within a certain concept | Examples of fields related to the People concept: age, sex, height, weight, etc.do we need this? |
 | **Instances** | A particular set of values for entities within a concept. | Example of an instance: Paul, 40yrs old, male, 6', 180poundsExamples of entities related to the People concept: age, sex, height, weight, etc. |
 | **Values** | A particular size, measure, number of an entity | Example of a value: 40Example of an instance: Paul, 40yrs old, male, 6', 180pounds |
@@ -439,8 +439,7 @@ Knowledge applications can be developed in any language. Most languages have som
 Maana catalogue is the repository for all components that can be used as part of MAANA knowledge solutions
 
 * How do you add/publish/update/delete components in the catalogue?
-
-1. 2.Defining a model in Maana
+* 2.Defining a model in Maana
 
 All of the following documentation uses XXX.XXX.XXX.XXX facing to represent the public URL of the system. All of the following examples use the Graphiql endpoint which is interactive, programmatic access conducted through the Graphql endpoint.
 
@@ -465,8 +464,7 @@ Maana engineering team is currently implementing authentication functionality, w
 * How to query instance data
 * How to perform complex queries \( [https://confluence.corp.maana.io/display/RD/Technical+Design+Notes\#TechnicalDesignNotes-Queries](https://confluence.corp.maana.io/display/RD/Technical+Design+Notes#TechnicalDesignNotes-Queries)\)
 * How to perform search \( [https://confluence.corp.maana.io/display/RD/Maana+Q+Search+-+Technical+Design](https://confluence.corp.maana.io/display/RD/Maana+Q+Search+-+Technical+Design)\)
-
-1. 3.Hydrating the model with data
+* 3.Hydrating the model with data
 
 Steps to hydrate a model with data:
 
@@ -601,8 +599,7 @@ something
 }
 
 1. 4.Querying a model
-
-1. 1. 4.1.Query through service end points
+2. 1. 4.1.Query through service end points
 
 This is the most common way to query the data once ingested in the graph
 
@@ -797,13 +794,11 @@ Once cloned, perform the customizations recommended in the template's README.md.
 If your language isn't represented, we'd be happy to work with you to develop a template or just send a pull request to have it included.
 
 1. 1. 5.2.Development
-
-* define GraphQL schema for the service endpoint
-* implement appropriate resolvers
-* be client \(query, mutate, subscribe\) to other Knowledge Services \(dependencies\)
-* stitch together existing services, providing an aggregated endpoint \(to simplify client access\)
-
-1. 1. 5.3.Packaging
+2. define GraphQL schema for the service endpoint
+3. implement appropriate resolvers
+4. be client \(query, mutate, subscribe\) to other Knowledge Services \(dependencies\)
+5. stitch together existing services, providing an aggregated endpoint \(to simplify client access\)
+6. 1. 5.3.Packaging
 
 prepare deployment
 
@@ -812,9 +807,8 @@ prepare deployment
 **unmanaged service** : not our problem
 
 1. 1. 5.4.Adding a knowledge microservice to the MAANA catalogue
-
-* prepare a service manifest \(basically a serialized instance of Kind Service\)
-* register the service in the catalog
+2. prepare a service manifest \(basically a serialized instance of Kind Service\)
+3. register the service in the catalog
 
 **Maana will:**
 

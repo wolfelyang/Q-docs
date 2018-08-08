@@ -1,4 +1,4 @@
-# Administrator Guide
+# Adinistrator
 
 ## Deployment Prerequisites
 
