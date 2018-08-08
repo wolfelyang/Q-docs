@@ -1,0 +1,55 @@
+# source: http://127.0.0.1:18030/graphql
+# timestamp: Tue May 15 2018 22:55:57 GMT-0700 (PDT)
+
+input AddFileInput {
+  id: String
+  name: String
+  url: String
+  thumbnailUrl: String
+  mimeType: String
+  size: String
+  progress: String
+  status: Int!
+}
+
+type Document {
+  id: ID!
+  name: String!
+  text: String
+}
+
+type FileAddedEvent {
+  id: ID!
+  name: String!
+  url: String
+  thumbnailUrl: String
+  size: String
+  status: Int
+  mimeType: String
+}
+
+"""Service Information"""
+type Info {
+  id: ID!
+  name: String!
+  description: String
+}
+
+type Mutation {
+  createDoc(
+    """Input file"""
+    file: AddFileInput!
+  ): Document!
+}
+
+type Query {
+  info: Info!
+  extractText(
+    """Input file"""
+    file: AddFileInput!
+  ): String!
+}
+
+type Subscription {
+  fileAdded: FileAddedEvent!
+}

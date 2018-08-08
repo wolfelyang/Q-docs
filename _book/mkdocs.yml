@@ -1,0 +1,9 @@
+site_name: Maana, Inc.
+pages:
+    - Guides to Q: README.md
+    - Analyst Guide: index.md
+    - Developer Guide: /index-1.md
+    - Scientist: index-2.md
+    - Administrator: index-3.md
+    
+# theme: readthedocs
