@@ -887,4 +887,3 @@ register with CKG?
 boilerplate query and mutation resolvers and event emitters
 
 schema stitching between synthetic and service-provided resolvers
-
