@@ -18,7 +18,7 @@
     * [Logging](administrator/logging.md)
     * [Monitoring](administrator/monitoring.md)
 * [Release Notes](release-notes.md)
-* [Tutorials](tutorials/tutorials.md)
+* [Tutorials](tutorials/README.md)
     * [UI 101](tutorials/ui.md)
     * [CLI 101](tutorials/cli.md)
 * [FAQ](faq.md)
