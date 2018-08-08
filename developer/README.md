@@ -2,11 +2,7 @@
 description: Knowledge Technology - Developer Guide
 ---
 
-# Developer
-
-Research and Development : Developer Guide
-
-1. [Research and Development](https://github.com/maana-io/Q-docs/tree/01a17f240888cc341c1abb8a9bca8b4091f5d81f/docs/index.html)
+# Developer Guide
 
 ## Research and Development Developer Guide
 
@@ -26,7 +22,7 @@ This guide is intended for the use of Solution Developers and Data Scientists, a
 
 ### Glossary
 
-Prior to working with the Maana Platform, it is suggested that you familiarize yourself with some basic terms and concepts that will help the make most out of your Maana portal experience. For a complete **Glossary of Terms,** please refer to the Appendix found at the back of this document.
+Prior to working with the Maana Platform, it is suggested that you familiarize yourself with some basic terms and concepts that will help the make most out of your Maana portal experience. For a complete Glossary of Terms, please refer to the Appendix found at the back of this document.
 
 ## The Maana Platform
 
@@ -36,7 +32,7 @@ The Maana platform is used by solutions teams to deliver knowledge applications 
 
 At the core of any Maana solution sits our Computational Knowledge Graph \(CKG\), a network of models built using machine learning techniques and artificial intelligence that powers AI-driven applications used to digitize decision support and operations. It allows the knowledge of the business to be incrementally captured and grown, evolving and becoming increasingly sophisticated as more projects are developed.
 
-### Utilizing GraphQL
+### Utillizing GraphQL
 
 Maana uses GraphQL to represent and expose its Computational Knowledge Graph. GraphQL is a data query language created by Facebook and open-sourced in 2015 as an alternative to REST interfaces.
 
@@ -46,13 +42,9 @@ GraphQL creates a uniform API across your entire application without being limit
 
 #### Maana Platform Architecture and GraphQL
 
-1. Subject Matter Expertise
-2. Relevant Data from Silos
-3. The Right Algorithm
-
 ![](../.gitbook/assets/image.png)
 
-For more information on using on Graph QL, please refer to How to GraphQL at:  [https://www.howtographql.com/](https://www.howtographql.com/)
+For more information on using on Graph QL, please refer to the link provided below:
 
 ## Computational Knowledge Graph Features
 
@@ -60,7 +52,7 @@ With the Computational Knowledge Graph:
 
 •   The Graph is dynamic. Nodes, which represent concepts in the graph, are not static containers, but rather act as computational vessels, allowing algorithms to be stored and executed.
 
-•   Models - Knowledge Graph flexibility enables groups across the organization to leverage and build-upon models created by other groups, dramatically accelerating the speed at which models are created throughout the organization. These models are dynamic, and once operationalized into applications, they learn and adapt based on the user behaviors and provide continuous intelligence for day-to-day operations.
+With the Computational Knowledge Graph:
 
 * The structure of data is separated from its content. This separation enables a fluidity of modeling - data from any source or format can be seamlessly integrated, modeled, searched, analyzed, operationalized and re-purposed.
 * Data remains at the source - Only the most relevant data, within the context of what is being optimized, is indexed and brought into the graph.
@@ -72,15 +64,17 @@ With the Computational Knowledge Graph:
 
 * As source data is updated in real time, so are the nodes and the computational models that act on that data, permitting more complex relationships to be modeled, and enhancing the graph’s ability to understand the connections between concepts \(rather than simple strings of data\), and encouraging optimization of decisions and operations.
 
+
+
 The CKG consists of **concepts** and **properties**, **instances** and **values**, and **relations** and **links**.
 
-Consider the concept of a ContainerShip with the properties of name, length, position, etc. A specific instance \(entity\) for our ContainerShip might have values for each of these properties, such as the vessel Maersk Viking having a length of 400 meters. Such properties can be scalar \(e.g., numbers, strings, dates\) or might refer to other concepts/instances - such as the Hold Cargo of the vessel.
+Consider the concept of a _ContainerShip_ with the properties of _name_, _length_, _position_, etc. A specific instance \(entity\) for our ContainerShip might have values for each of these properties, such as the vessel Maersk Viking having a length of _400 meters._ Such properties can be scalar \(e.g., numbers, strings, dates\) or might refer to other concepts/instances - such as the _Hold Cargo_ of the vessel.
 
-In some cases, property values for an instance may simply be stored, as they are rarely subject to change. In other cases, they will be dynamically computed, due to constantly changing values - such as a ship's weight \(which is dependent upon its cargo\) or variables like the vessel’s current position \(which requires getting a GPS reading\).
+In some cases, property values for an instance may simply be stored, as they are rarely subject to change. In other cases, they will be dynamically computed, due to constantly changing values - such as a ship's _weight_ \(which is dependent upon its cargo\) or variables like the vessel’s _current position_ \(which requires getting a GPS reading\).
 
 Unlike a traditional graph database, Maana incorporates arbitrary computation \(through custom GraphQL resolvers\) and distributes the graph into subgraphs managed by different microservices, optionally with their own dedicated persistence mechanism. This separation enables a fluidity of modeling, allowing data from any source and in any format to be seamlessly integrated, modeled, searched, analyzed, operationalized and re-purposed. It also places more responsibility on the microservices to provide their own storage.
 
-#### Data Model Split
+### Data Split
 
 To address this, Maana proposes an explicit split between the data models \(i.e., GraphQL type definitions\) that a service uses and its operations \(i.e., GraphQL resolvers\). Maana will generate the appropriate managed service for such models using KindDB, Prisma, neo4j, etc. With this, the solution developer only provides the logic they care about and let the system take care of all the CRUD/ORM-like operations on the data.
 
@@ -95,7 +89,7 @@ The Maana platform manages these services, providing authentication, reliable me
 * authenticated access
 * client/server boilerplate
 * reliable messaging using RabbitMQ
-* Lifecycle management \(info, register, deregister\)
+* lifecycle management \(info, register, deregister\)
 * Docker containerization and automatic scaling/load balancing
 
 Maana Knowledge Services form a network of GraphQL endpoints, exposing their types, queries, and mutations for direct access, as well as publishing and subscribing to network events. A GraphQL service \(or endpoint\) consists of:
@@ -106,83 +100,6 @@ Maana Knowledge Services form a network of GraphQL endpoints, exposing their typ
 * events \(pub/sub\)
 
 Examples of knowledge microservices include:
-
-| Indexers | Miners | Classifiers |
-| :--- | :--- | :--- |
-| Text | Statistics | Entity |
-| Number | Probabilities | Field |
-| Time | NER/NLP | Document |
-| Geospatial |  | Image |
-| Geometric |  |  |
-
-### Bots, Bot Actions, Kinds and Services
-
-A **Bot** is a Knowledge Microservice that “listens” for specific events on a system bus, and acts automatically when such events happen to mine and enrich the graph. They provide specialized queries and mutations that perform **BotActions**, allowing the bot to provide asynchronous status updates.
-
-For more information on BotActions, see:  [https://confluence.corp.maana.io/display/RD/Bot+Actions](https://confluence.corp.maana.io/display/RD/Bot+Actions)
-
-
-**Example**: When a raw data file is loaded into MAANA, a bot automatically analyzes it to identify mentions of entities like persons, phone numbers, values, and facts.
-
-Users can configure, start, stop, and schedule bot actions. This enables user interface components to immediately return the latest status:
-
-* Throughout the duration of extended, ongoing operations.
-* By events that act as automatic triggers \(such as entity recognition, new concept creation and classification\).
-* Report any errors or messages.
-
-There are two primary scenarios to consider here:
-
-1. Event Handling
-2. Direct Query/Mutations
-
-#### Event Handling
-
-When a Knowledge Service subscribes to and handles an event, such as "fileAdded," it can \(optionally\) create an instance of a BotAction Kind by mutating the Computational Knowledge Graph.
-
-
-**Note**:  As the service performs its operation, it can periodically update the progress \(if it is deterministic\) and update the status and report errors.
-
-
-#### Queries and Mutations
-
-A user can invoke a query or mutation either explicitly \(e.g., train a classifier on labeled data\) or implicitly \(i.e., as part of query graph\). In such cases, the service exposes such queries and mutations as returning a BotAction.
-
-#### Kinds and Services
-
-All Kinds \(concepts, types\) are associated with a service. This service is said to provide the \(entities of\) the Kind. Many Kinds are purely extensional \(i.e., data\) and do not have custom CRUD behavior. These Kinds are automatically managed by the Computational Knowledge Graph \(CKG\) and stored in the KindDB, where they are indexed for efficient search and querying \(including sophisticated entity concurrences\).
-
-Services also depend on existing Kinds and queries, mutations, and events. The services that provide these Kinds \(which may be fully managed by CKG/KindDB\) can be imported into a new service purely through GraphQL and specified in a manifest that is used to create and register a new service. This process will result in a merged schema on a service-specific endpoint that the newly developed service uses for all Maana GraphQL communication \(non-pub/sub\).
-
-## Development
-
-The development of a Maana Knowledge Application solution can be best described in five stages:
-
-1. Design
-2. Local Service \(Standalone\)
-3. Local Service \(Maana\)
-4. Unmanaged Service
-5. Managed Service
-
-### Design Stage
-
-The primary focus of this stage is:
-
-* GraphQL types \(Kinds, Properties, Relations\)
-* Queries and Mutations \(often based on Problem Questions\)
-* Events \(consumed and produced\)
-
-At the Design Stage, the overall problem to be solved has been analyzed and a domain model and set of decomposed problem questions has been generated. Some discussion of entity sources and data science has taken place, and it is now time to code one or more Knowledge Microservices to provide some new concepts \(Types, Kinds\) along with Queries, Mutations, and Events that involve them.
-
-#### Focus on the GraphQL
-
-For the Knowledge Service/Bot, this is the entire description of and interface to their world. Define a file in the GraphQL SDL, such as `model.gql`, and include custom queries, mutations, and publications/subscriptions.
-
-* Plan the custom resolvers.
-* Consider such things as the nature of their core logic.
-
-### Local Service Stage \(Standalone\)
-
-
 
 
 
@@ -210,7 +127,7 @@ The **Computational Knowledge Graph \(CKG\)**, itself a microservice, provides a
 
 ### GraphQL Learning Resources
 
-* How to GraphQL
+* [How to GraphQL](https://www.howtographql.com/)
 
 ## Knowledge Microservices and Bots
 
@@ -432,25 +349,62 @@ Document generated by Confluence on Jul 25, 2018 06:05
 
 [Atlassian](http://www.atlassian.com/)
 
-## MAANA Q
+## WORD CONVERSION
 
-## Knowledge Technology Development Guide
+MAANA Q
 
-## Introduction
+Knowledge Technology Development Guide
 
-### Welcome to Maana
+Table of Contents
 
-Maana was founded with the vision of using technology to systematize the world’s industrial expertise and data into digital knowledge that could significantly advance the global economy. Our mission is to facilitate the tens of millions of experts working in industrial companies around the world, and give them the ability to make better decisions, faster. We are devoted to putting the power of artificial intelligence \(AI\) into the hands of millions of industry experts, offering enhanced decision-making tools in a rapid response environment.
+1. Platform Architecture and Components overview        1
 
-### Better and Faster
+1.1. What is MAANA? 1
+
+1.2. Maana platform architecture and GraphQL 3
+
+1.3. About Maana Kinds and other useful terms 4
+
+1.4. Knowledge Microservices 5
+
+1.5. Knowledge Applications 6
+
+1.6. MAANA catalogue 7
+
+1. Defining a model in Maana 7
+2. Hydrating the model with data 8
+3. Querying a model 11
+
+4.1. Query through service end points 11
+
+4.2. Query using global entry points 11
+
+4.3. Query using allinstances 12
+
+4.4. Query across kinds 13
+
+1. Developing knowledge microservices        14
+
+5.1. Project Setup 14
+
+5.2. Development 15
+
+5.3. Packaging 15
+
+5.4. Adding a knowledge microservice to the MAANA catalogue 15
+
+1. Developing knowledge applications 16
+2. Troubleshooting 16
+3. Troubleshooting 16
+
+Audience for this guide: Solution Developers / Data Scientist
+
+This guide helps Solution Developers and Data Scientists learn how to build Knowledge Solutions on the Maana platform .
+
+1. 1.Platform Architecture and Components overview
+   1. 1.1.What is MAANA?
 
 In 2013 Maana invented a new way to represent industrial knowledge mathematically, using the Maana Patented Computational Knowledge Graph™. This unique technology enables industrial companies to encode human expertise and data from across silos into digital knowledge to help employees make better and faster decisions. The Maana Computational Knowledge Graph™ is a network of models that optimize specific operations and decisions flows by providing recommendations through AI-Driven Applications into those operations. This unique technology eliminates the need to move data and enables creation of thousands of models at scale, through the re-usability of models across the enterprise.
-
-### Scope
-
-
-
-
 
 Why MAANA
 
