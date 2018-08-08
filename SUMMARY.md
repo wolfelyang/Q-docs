@@ -21,6 +21,8 @@
 * [Tutorials](tutorials/README.md)
     * [UI 101](tutorials/ui.md)
     * [CLI 101](tutorials/cli.md)
+    * [Prisma](prisma.md)
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
 * [Contact](contact.md)
+
