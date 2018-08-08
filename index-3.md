@@ -1,4 +1,4 @@
-# Adinistrator
+# Administrator
 
 ## Deployment Prerequisites
 
@@ -51,4 +51,3 @@
 ## Troubleshooting
 
 ​\#\# Technical support
-
