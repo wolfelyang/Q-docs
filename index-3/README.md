@@ -1,4 +1,4 @@
-# Adinistrator
+# Administrator
 
 ## Deployment Prerequisites
 
