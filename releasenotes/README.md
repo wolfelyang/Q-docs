@@ -1,9 +1,7 @@
-# Release Notes
-
-## v3.1.2
+# v3.1.2
 
 
-### New Features and Capabilities
+## New Features and Capabilities
 
 | Feature | Description |
 | ----------- | -----------|
@@ -53,7 +51,7 @@ Query extractXHTML{
 ```
 
 
-### Fixed Issues
+## Fixed Issues
 
 
 
@@ -69,7 +67,7 @@ Query extractXHTML{
 
 
 
-### Known Issues
+## Known Issues
 
 |Issue Description|
 |------|
