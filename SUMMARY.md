@@ -17,7 +17,9 @@
     * [User and Policy Management](administrator/user-and-policy-management.md)
     * [Logging](administrator/logging.md)
     * [Monitoring](administrator/monitoring.md)
-* [Release Notes](release-notes.md)
+* [Release Notes](releasenotes/README.md)
+    * [v3.1.2](releasenotes/v3-1-2.md)
+    * [v3.0.5](releasenotes/v3-0-5.md)
 * [Tutorials](tutorials/README.md)
     * [UI 101](tutorials/ui.md)
     * [CLI 101](tutorials/cli.md)
@@ -25,4 +27,3 @@
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
 * [Contact](contact.md)
-
