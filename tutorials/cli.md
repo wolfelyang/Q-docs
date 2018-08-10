@@ -245,7 +245,9 @@ Again, we need to add the authorization header.
   ```bash
     $ gql maddheaders
   ```
-  ![](/assets/animations/cli-gif11.gif)
+  
+![](/assets/animations/cli-gif11.gif)
+
 * In Maana Q 3.5.0 will require adding it manually, check [here](#v3.0.5) for instructions.
 
 ## Introspecting the Service
