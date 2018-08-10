@@ -192,24 +192,40 @@ Sending query:
 
 The included `.graphqlconfig` already contains a project, `dp`, that specified the schema file and endpoint for this service. However, the service ID needs to be updated to match the output from adding the service (above):
 
-```diff
-     "dp": {
+```
+{
+  "projects": {
+    "ckg": {
+      "schemaPath": "ckg.graphql",
+      "extensions": {
+        "endpoints": {
+          "default": {
+            "url": "https://latest.knowledge.maana.io:8443/graphql",
+            "headers": {
+              "Authorization": "Bearer ${env:AUTH_TOKEN_ENV}"
+            }
+          }
+        }
+      }
+    },
+    "dp": {
       "schemaPath": "dp.graphql",
-       "extensions": {
-         "endpoints": {
--           "default": "https://qtraining01.knowledge.maana.io:8443/service/051850b1-f088-46b1-8e35-679f5d2ac84f/graphql"
-+           "default": {
-+             "url": "https://qtraining01.knowledge.maana.io:8443/service/50d759d5-983d-4ea2-9773-20077c9b823e/graphql"
-+             "headers": {
-+               "Authorization": "Bearer ${env:AUTH_TOKEN_ENV}"
-+             }
-+           }
-         }
-       }
-     }
+      "extensions": {
+        "endpoints": {
+          "default": {
+            "url": "https://latest.knowledge.maana.io:8443/service/50d759d5-983d-4ea2-9773-20077c9b823e/graphql",
+            "headers": {
+              "Authorization": "Bearer ${env:AUTH_TOKEN_ENV}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
 ```
 
-**Optionally**, to create this project from scratch:
+**Optionally**, *to create this project from scratch:*
 
 ```bash
 gql add-project
