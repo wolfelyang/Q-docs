@@ -67,7 +67,7 @@ ____
 gql init
 ? Enter project name (Enter to skip): ckg
 ? Local schema file path: ckg.graphql
-? Endpoint URL (Enter to skip): https://stable.knowledge.maana.io:8443/graphql
+? Endpoint URL (Enter to skip): https://<INSERT ENDPOINT URL>:8443/graphql
 ? Name of this endpoint, for e.g. default, dev, prod: (default)
 ? Subscription URL (Enter to skip):
 ? Do you want to add other endpoints? No
@@ -81,7 +81,7 @@ About to write to /home/me/maana/training/.graphqlconfig:
       "schemaPath": "ckg.graphql",
       "extensions": {
         "endpoints": {
-          "default": "https://stable.knowledge.maana.io:8443/graphql"
+          "default": "https://<INSERT ENDPOINT URL>8443/graphql"
         }
       }
     }
@@ -194,7 +194,7 @@ We can use the GraphQL CLI with the Maana plugin command: `maddsvc` ("add servic
 
 ```bash
 gql maddsvc "Drillng Problems" -s model.gql -p ckg
-Using endpoint default: {"url":"https://qtraining01.knowledge.maana.io:8443/graphql"}
+Using endpoint default: {"url":"https://<INSERT ENDPOINT URL>:8443/graphql"}
 Read file: model.gql size: 483
 Sending query:
 
@@ -219,7 +219,7 @@ The included `.graphqlconfig` file (also outlined below) already contains a proj
       "extensions": {
         "endpoints": {
           "default": {
-            "url": "https://latest.knowledge.maana.io:8443/graphql",
+            "url": "https://<INSERT ENDPOINT URL>:8443/graphql",
             "headers": {
               "Authorization": "Bearer ${env:AUTH_TOKEN_ENV}"
             }
@@ -232,7 +232,7 @@ The included `.graphqlconfig` file (also outlined below) already contains a proj
       "extensions": {
         "endpoints": {
           "default": {
-            "url": "https://qtraining01.knowledge.maana.io:8443/service/<INSERT YOUR SERVICE ID FROM ABOVE HERE>/graphql",
+            "url": "https://<INSERT ENDPOINT URL>:8443/service/<INSERT YOUR SERVICE ID FROM ABOVE HERE>/graphql",
             "headers": {
               "Authorization": "Bearer ${env:AUTH_TOKEN_ENV}"
             }
@@ -250,7 +250,7 @@ The included `.graphqlconfig` file (also outlined below) already contains a proj
 gql add-project
 ? Enter project name for new project: dp
 ? Local schema file path: dp.graphql
-? Endpoint URL (Enter to skip): https://qtraining01.knowledge.maana.io:8443/service/<INSERT YOUR SERVICE ID FROM ABOVE HERE>/graphql
+? Endpoint URL (Enter to skip): https://<INSERT ENDPOINT URL>:8443/service/<INSERT YOUR SERVICE ID FROM ABOVE HERE>/graphql
 ? Name of this endpoint, for e.g. default, dev, prod: (default)
 ? Subscription URL (Enter to skip):
 ? Do you want to add other endpoints? No
