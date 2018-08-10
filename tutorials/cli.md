@@ -213,7 +213,7 @@ The included `.graphqlconfig` already contains a project, `dp`, that specified t
       "extensions": {
         "endpoints": {
           "default": {
-            "url": "https://latest.knowledge.maana.io:8443/service/50d759d5-983d-4ea2-9773-20077c9b823e/graphql",
+            "url": "https://qtraining01.knowledge.maana.io:8443/service/<INSERT YOUR SERVICE ID FROM ABOVE HERE>/graphql",
             "headers": {
               "Authorization": "Bearer ${env:AUTH_TOKEN_ENV}"
             }
@@ -231,7 +231,7 @@ The included `.graphqlconfig` already contains a project, `dp`, that specified t
 gql add-project
 ? Enter project name for new project: dp
 ? Local schema file path: dp.graphql
-? Endpoint URL (Enter to skip): https://qtraining01.knowledge.maana.io:8443/service/1788c00e-3a29-4843-aa56-44ba374cf682/graphql
+? Endpoint URL (Enter to skip): https://qtraining01.knowledge.maana.io:8443/service/<INSERT YOUR SERVICE ID FROM ABOVE HERE>/graphql
 ? Name of this endpoint, for e.g. default, dev, prod: (default)
 ? Subscription URL (Enter to skip):
 ? Do you want to add other endpoints? No
@@ -245,7 +245,7 @@ Again, we need to add the authorization header.
   ```bash
     $ gql maddheaders
   ```
-  
+
 ![](/assets/animations/cli-gif11.gif)
 
 * In Maana Q 3.5.0 will require adding it manually, check [here](#v3.0.5) for instructions.
