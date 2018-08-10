@@ -193,7 +193,7 @@ We can use the GraphQL CLI with the Maana plugin command: `maddsvc` ("add servic
 ```
 
 ```bash
-gql maddsvc "Drillng Problems" -s model.gql -p ckg
+gql maddsvc "Drilling Problems" -s model.gql -p ckg
 Using endpoint default: {"url":"https://<INSERT ENDPOINT URL>:8443/graphql"}
 Read file: model.gql size: 483
 Sending query:
