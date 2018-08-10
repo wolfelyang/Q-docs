@@ -44,6 +44,23 @@ We use the GraphQL command line interface (CLI) with the Maana plugin:
 
 **We have included a `.graphqlconfig` file preconfigured for this tutorial. Minimally, ensure the endpoint is correct for the Maana endpoint you are using. If you have any questions about the correct Maana endpoint please contact your Maana Solutions Architect Team, or your Internal Maana Administrator**
 
+Edit the preconfigured `.graphqlconfig`, copy the code below into your `.graphqlconfig` file, and be sure to *update your endpoint URL*
+
+```
+{
+  "projects": {
+    "ckg": {
+      "schemaPath": "ckg.graphql",
+      "extensions": {
+        "endpoints": {
+          "default": "https://<INSERT ENDPOINT URL>/graphql"
+        }
+      }
+    }
+  }
+}
+```
+____
 **Optionally**, to create a configuration from scratch, create a CKG project and GraphQL endpoint, as in:
 
 ```bash
@@ -74,6 +91,7 @@ About to write to /home/me/maana/training/.graphqlconfig:
 ? Is this ok? Yes
 ```
 ![](/assets/animations/cli-gif4.gif)
+____
 
 ## Authentication with Maana
 
@@ -190,7 +208,7 @@ Sending query:
 
 ## Update the Config
 
-The included `.graphqlconfig` already contains a project, `dp`, that specified the schema file and endpoint for this service. However, the service ID needs to be updated to match the output from adding the service (above):
+The included `.graphqlconfig` file (also outlined below) already contains a project, `dp`, that specified the schema file and endpoint for this service. However, the service ID needs to be updated to match the output from adding the service (above) to the code block below:
 
 ```
 {
