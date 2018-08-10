@@ -53,7 +53,7 @@ Edit the preconfigured `.graphqlconfig`, copy the code below into your `.graphql
       "schemaPath": "ckg.graphql",
       "extensions": {
         "endpoints": {
-          "default": "https://<INSERT ENDPOINT URL>/graphql"
+          "default": "https://<INSERT ENDPOINT URL>:8443/graphql"
         }
       }
     }
@@ -97,40 +97,8 @@ ____
 
 Maana endpoints require a valid (authenticated) user in order to prevent unauthorized access. You must first obtain a token and the update the configuration to use the token by updating the endpoint configuration.
 
-### <a name="v3.0.5"></a>Maana Q v3.0.5
 
-* Login to the Maana Knowledge Portal
-* Click on your user icon and select your profile
-* At the bottom of the profile page click the 'Get CLI Authentication Token' button
-* Login Again (For Enhanced Security)
-* Copy the generated auth token that shows up below the button
-
-![](/assets/animations/cli-gif5.gif)
-
-
-* In the terminal add an environment variable for the auth token
-
-```sh
-# *nix based systems
-export AUTH_TOKEN_ENV=<paste auth token here>
-```
-
-```bat
-rem windows command line
-set AUTH_TOKEN_ENV=<paste auth token here>
-```
-
-```ps1
-# windows power shell
-$Env:AUTH_TOKEN_ENV = "<paste auth token here>"
-```
-
-
-![](/assets/animations/cli-gif7.gif)
-
-
-
-## Maana Q v3.1.0 and later
+### Maana Q v3.1.0 and later
 
 After creating a new `.graphqlconfig` file connecting to a Maana API endpoint:
 * Login to the Maana Knowledge Portal
@@ -166,9 +134,42 @@ After creating a new `.graphqlconfig` file connecting to a Maana API endpoint:
   ```sh
     gql ping
   ```
+
 ![](/assets/animations/cli-gif9.gif)
 
-#### Additional Notes
+### Maana Q v3.0.5
+
+* Login to the Maana Knowledge Portal
+* Click on your user icon and select your profile
+* At the bottom of the profile page click the 'Get CLI Authentication Token' button
+* Login Again (For Enhanced Security)
+* Copy the generated auth token that shows up below the button
+
+![](/assets/animations/cli-gif5.gif)
+
+
+* In the terminal add an environment variable for the auth token
+
+```sh
+# *nix based systems
+export AUTH_TOKEN_ENV=<paste auth token here>
+```
+
+```bat
+rem windows command line
+set AUTH_TOKEN_ENV=<paste auth token here>
+```
+
+```ps1
+# windows power shell
+$Env:AUTH_TOKEN_ENV = "<paste auth token here>"
+```
+
+
+![](/assets/animations/cli-gif7.gif)
+
+
+### Additional Notes
 
 * When you add another project to your `.graphqlconfig` file you can run `gql maddheaders --project <Project Name>` to add the headers to the new project.
 * When you want to run the CLI against the Maana API in a different terminal window you will need to run `gql env` again.
@@ -293,5 +294,7 @@ gql mload data/Well.csv -p dp
 
 
 For convenience, these steps have been added to a script file: `loadData.sh`
+
+` sh loadData.sh `
 
 ![](/assets/animations/cli-gif15.gif)
