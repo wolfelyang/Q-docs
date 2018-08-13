@@ -7,7 +7,7 @@ ____
 
 In this tutorial, we will walk step-by-step for creating a managed graph from a GraphQL definition, loading it with data, adding custom services, and building a knowledge application.
 
-## Note - GIT is a required prerequisite for this training.
+### Note - GIT is a required prerequisite for this training.
 
 To download GIT please use the following instructions:
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
