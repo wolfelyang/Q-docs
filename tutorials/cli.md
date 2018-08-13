@@ -624,7 +624,3 @@ These queries can be invoked from the command line, such as:
 gql query basic/basicOps.gql -p basic -o allEmployers
 gql query basic/basicOps.gql -p basic -o person --variables "{\"id\":\"P01\"}"
 ```
-
-## Issuing a Kind Query
-
-TODO
