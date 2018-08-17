@@ -22,20 +22,6 @@ This guide is intended for the use of Solution Developers and Data Scientists, a
 Prior to working with the Maana Platform, it is suggested that you familiarize yourself with some basic terms and concepts that will help the make most out of your Maana portal experience. For a complete Glossary of Terms, please refer to the Appendix found at the back of this document, or go to the [Glossary](/glossary.md)  section of the Maana Corporate site.
 
 
-# Document Structure:
-
-    * [The Maana Platform](developer/maanaplatform.md)
-    * [Knowledge Microservices](developer/knowledgemicroservices.md)
-        * [Bot Actions](developer/botactions.md)
-    * [Development Stages](developer/developmentstages.md)
-    * [Knowledge Applications](developer/knowledgeapplications.md)
-    * [Using Maana](developer/usingmaana.md)
-        * [Create a Graph from a GQL Definition](developer/creategqlgraph.md)
-    * [Developing Knowledge Microservices From Maana Service Templates](developer/knowledgeservicetemplate.md)
-    * [Troubleshooting](developer/troubleshooting.md)
-
-
-
 # The Maana Platform
 
 The Maana platform is used by solutions teams to deliver knowledge applications to their end users \(i.e., business users, SMEs, managers\). This “solution team” approach involves the collaboration of analysts, engineers, and data scientists. The platform is designed to build an enterprise-wide knowledge layer, utilizing search and exploration for solution development and delivery.
